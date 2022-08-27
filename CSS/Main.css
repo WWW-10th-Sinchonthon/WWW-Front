@@ -120,8 +120,19 @@ header .weather {
 	height: 217px;
 	border-radius: 100%;
 	margin: 0 auto;
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-		linear-gradient(180deg, #e7ad7d 9.28%, rgba(234, 210, 35, 0.107891) 144.6%, rgba(235, 212, 29, 0.0531605) 166.99%, rgba(235, 214, 25, 0.00729179) 167.01%, rgba(231, 173, 125, 0) 167.03%);
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.6),
+			rgba(255, 255, 255, 0.6)
+		),
+		linear-gradient(
+			180deg,
+			#e7ad7d 9.28%,
+			rgba(234, 210, 35, 0.107891) 144.6%,
+			rgba(235, 212, 29, 0.0531605) 166.99%,
+			rgba(235, 214, 25, 0.00729179) 167.01%,
+			rgba(231, 173, 125, 0) 167.03%
+		);
 	text-align: center;
 	margin-bottom: 148px;
 }
@@ -381,4 +392,8 @@ main .resultContainer p {
 	line-height: 10px;
 	color: #ee952d;
 	text-align: left;
+}
+
+.recommendBox {
+	width: 115px;
 }

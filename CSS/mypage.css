@@ -58,16 +58,15 @@ header .cloud13 {
 	top: -2px;
 }
 
-header .logo {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 21.78px;
-	padding-top: 14px;
-	padding-left: 19px;
+header .headContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 18px;
+	padding-top: 22px;
 }
 
-.logo p {
-	width: 100%;
+.headContainer span {
+	width: auto;
 }
 
 header .profile {
@@ -217,7 +216,7 @@ main .monthWeather {
 	width: 100%;
 }
 
-.monthWeather .tag {
+.monthWeather p:last-child span {
 	color: #ee952d;
 }
 

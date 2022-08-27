@@ -13,6 +13,39 @@ html {
 header {
 	background-color: #cfedf3;
 	height: 206px;
+	position: relative;
+}
+
+header img {
+	position: absolute;
+}
+
+header .cloud10 {
+	width: 82px;
+	height: 49px;
+	left: 308px;
+	top: 14px;
+}
+
+header .cloud11 {
+	width: 64px;
+	height: 38px;
+	left: 0px;
+	top: 44px;
+}
+
+header .cloud12 {
+	width: 64px;
+	height: 38px;
+	left: 290px;
+	top: 44px;
+}
+
+header .cloud13 {
+	width: 52px;
+	height: 31px;
+	left: 89px;
+	top: -2px;
 }
 
 header .logo {

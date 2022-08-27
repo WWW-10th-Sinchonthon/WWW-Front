@@ -96,7 +96,6 @@ header .nickname {
 }
 
 header .desc {
-	background-color: rgba(255, 255, 255, 0.5);
 	height: 63px;
 	padding-left: 130px;
 }
@@ -114,7 +113,7 @@ header .desc p {
 }
 
 header .btnContainer {
-	margin-top: 10px;
+	margin-top: 5px;
 	display: flex;
 	justify-content: center;
 	gap: 63px;

@@ -19,6 +19,7 @@ header {
 	background-color: #cfedf3;
 	height: 259px;
 	position: relative;
+	overflow: hidden;
 }
 
 header .imgContainer {

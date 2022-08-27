@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="../CSS/Create.css" rel="stylesheet" />
+		<script src="../JS/tagBtn.js"></script>
 
 		<title>WWW.</title>
 	</head>
@@ -112,3 +113,49 @@
 		</div>
 	</body>
 </html>
+
+<script>
+	// 날씨 버튼 선택
+	var tagBtn1 = document.getElementsByClassName('tagBtn1');
+	var tagBtn2 = document.getElementsByClassName('tagBtn2');
+
+	function handleClick(event) {
+		if (event.target.classList[1] === 'clicked') {
+			event.target.classList.remove('clicked');
+		} else {
+			for (var i = 0; i < tagBtn1.length; i++) {
+				tagBtn1[i].classList.remove('clicked');
+			}
+
+			event.target.classList.add('clicked');
+		}
+	}
+
+	function init1() {
+		for (var i = 0; i < tagBtn1.length; i++) {
+			tagBtn1[i].addEventListener('click', handleClick);
+		}
+	}
+
+	init1();
+
+	function handleClick(event) {
+		if (event.target.classList[1] === 'clicked') {
+			event.target.classList.remove('clicked');
+		} else {
+			for (var i = 0; i < tagBtn2.length; i++) {
+				tagBtn2[i].classList.remove('clicked');
+			}
+
+			event.target.classList.add('clicked');
+		}
+	}
+
+	function init2() {
+		for (var i = 0; i < tagBtn2.length; i++) {
+			tagBtn2[i].addEventListener('click', handleClick);
+		}
+	}
+
+	init2();
+</script>

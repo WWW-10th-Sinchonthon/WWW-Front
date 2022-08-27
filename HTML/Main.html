@@ -17,8 +17,8 @@
       <img class="cloud103" src="../img/image 10.svg" />
       <img class="cloud104" src="../img/image 10.svg" />
       <img class="cloud105" src="../img/image 10.svg" />
-      <img class="cloud11" src="../img/image 11-1.svg" />
-      <img class="cloud8" src="../img/image 8.svg" />
+      <img class="cloud11" src="../img/image 10.svg" />
+      <img class="cloud8" src="../img/image 10.svg" />
       <div class="headContainer">
          <span class="logo">www</span>
          <span class="login">login</span>
@@ -110,6 +110,75 @@
          </div>
       </div>
       <script>
+         const cloud101 = document.querySelector('.cloud101');
+         const cloud102 = document.querySelector('.cloud102');
+         const cloud103 = document.querySelector('.cloud103');
+         const cloud104 = document.querySelector('.cloud104');
+         const cloud105 = document.querySelector('.cloud105');
+         const cloud11 = document.querySelector('.cloud11');
+         const cloud8 = document.querySelector('.cloud8');
+
+         cloud101.style.left = "1px"
+         cloud8.style.left = "-96px"
+         cloud11.style.left = "-136px"
+         cloud105.style.left = "269px"
+         cloud102.style.left = "-188px"
+         cloud103.style.left = "208px"
+         cloud104.style.left = "243px"
+
+         let animate;
+
+         const cloudActive = () => {
+            moving1();
+            moving2();
+            moving3();
+         }
+
+         const moving1 = () => {
+            cloud101.style.left = parseInt(cloud101.style.left) + 1 + 'px';
+            cloud11.style.left = parseInt(cloud11.style.left) + 1 + 'px';
+            if (cloud101.style.left === '390px') {
+               cloud101.style.left = "-270px"
+            }
+            if (cloud11.style.left === '390px') {
+               cloud11.style.left = "-270px"
+            }
+
+            animate = setTimeout(moving1, 20)
+         }
+
+         const moving2 = () => {
+            cloud102.style.left = parseInt(cloud102.style.left) + 1 + 'px';
+            cloud103.style.left = parseInt(cloud103.style.left) + 1 + 'px';
+
+            if (cloud102.style.left === '390px') {
+               cloud102.style.left = "-270px"
+            }
+            if (cloud103.style.left === '390px') {
+               cloud103.style.left = "-270px"
+            }
+            animate = setTimeout(moving2, 30)
+         }
+
+         const moving3 = () => {
+            cloud8.style.left = parseInt(cloud8.style.left) + 1 + 'px';
+            cloud104.style.left = parseInt(cloud104.style.left) + 1 + 'px';
+            cloud105.style.left = parseInt(cloud105.style.left) + 1 + 'px';
+
+            if (cloud8.style.left === '390px') {
+               cloud8.style.left = "-270px"
+            }
+            if (cloud104.style.left === '390px') {
+               cloud104.style.left = "-270px"
+            }
+            if (cloud105.style.left === '390px') {
+               cloud105.style.left = "-270px"
+            }
+            animate = setTimeout(moving3, 40)
+         }
+
+         window.onload = cloudActive;
+
          const scrabSort = document.querySelector('.scrabSort');
          const nowSort = document.querySelector('.nowSort');
          const likeSort = document.querySelector('.likeSort');

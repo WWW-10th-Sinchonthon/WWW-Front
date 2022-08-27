@@ -65,7 +65,7 @@ header .profile {
 	position: relative;
 }
 
-header img {
+header .profileImg {
 	position: absolute;
 	width: 70px;
 	height: 70px;

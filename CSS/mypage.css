@@ -8,6 +8,11 @@
 html {
 	width: 390px;
 	margin: 0 auto;
+	background-color: #f5f5f5;
+}
+
+body {
+	background-color: #fff;
 }
 
 header {

@@ -104,7 +104,7 @@ header .btnContainer {
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
-	background-color: #fff;
+	background: rgba(255, 255, 255, 0.4);
 	border-radius: 30px;
 	width: 130px;
 	height: 51px;
@@ -113,13 +113,26 @@ header .btnContainer {
 }
 
 .btnContainer button:nth-child(2) {
-	background: rgba(255, 255, 255, 0.4);
+	background-color: #fff;
 }
 
 main {
 	height: 585px;
 	margin: 0 auto;
-	margin-top: 75px;
+	text-align: center;
+}
+
+main p {
+	margin-top: 20px;
+	margin-bottom: 17px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+
+	color: #6f6f6f;
 }
 
 main form {
@@ -139,13 +152,48 @@ main input {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 35px;
-	margin-bottom: 42px;
+	margin-bottom: 39px;
+}
+
+#photo {
+	display: none;
+}
+
+.photoUpload {
+	width: 235px;
+	border: 0;
+	text-align: center;
+	border-bottom: 1px solid #8d8d8d;
+	height: 35px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 35px;
+	color: grey;
+	margin: 0 auto;
+	margin-bottom: 39px;
+}
+
+main form textarea {
+	box-sizing: border-box;
+	width: 263px;
+	height: 97px;
+	border: 1px solid #cfedf3;
+	border-radius: 5px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 35px;
+	padding: 1px 14px;
+	outline-color: #cfedf3;
 }
 
 main .submitBtn {
 	width: 234px;
 	height: 43px;
-	margin-top: 19px;
+	margin-top: 24px;
 	background: #e3f7fb;
 	border-radius: 20px;
 	border: 0;

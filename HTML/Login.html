@@ -11,11 +11,13 @@
 
 <body>
    <header>
-      <img class="cloud10" src="../img/image 10.svg" />
-      <img class="cloud11" src="../img/image 11.svg" />
-      <img class="cloud12" src="../img/image 12.svg" />
-      <img class="cloud13" src="../img/image 13.svg" />
-      <img class="cloud14" src="../img/image 14.svg" />
+      <div class="imgContainer">
+         <img class="cloud10" src="../img/image 10.svg" />
+         <img class="cloud11" src="../img/image 11.svg" />
+         <img class="cloud12" src="../img/image 12.svg" />
+         <img class="cloud13" src="../img/image 13.svg" />
+         <img class="cloud14" src="../img/image 14.svg" />
+      </div>
       <div class="logo">
          <p>www</p>
       </div>
@@ -25,8 +27,8 @@
          <p><span>w</span>ear</p>
       </div>
       <div class="btnContainer">
-         <button class="myPostBtn">로그인</button>
-         <button class="myStoreBtn">회원가입</button>
+         <button class="loginBtn" onclick="changeLogin();">로그인</button>
+         <button class="signupBtn" onclick="changeSignup();">회원가입</button>
       </div>
    </header>
    <main>
@@ -36,6 +38,31 @@
          <input class="submitBtn" type="submit" value="로그인" />
       </form>
    </main>
+   <script>
+      const loginBtn = document.querySelector('.loginBtn');
+      const signupBtn = document.querySelector('.signupBtn');
+      const main = document.querySelector('main');
+      console.log(main)
+      const changeLogin = () => {
+         loginBtn.style = 'background-color: #fff;'
+         signupBtn.style = ' background-color: rgba(255, 255, 255, 0.4)';
+         main.innerHTML = `<form>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <input class="submitBtn" type="submit" value="로그인" />
+         </form>`
+      }
+      const changeSignup = () => {
+         signupBtn.style = 'background-color: #fff;'
+         loginBtn.style = ' background-color: rgba(255, 255, 255, 0.4)';
+         main.innerHTML = `<form>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Password_confirm" />
+            <input class="submitBtn" type="submit" value="회원가입" />
+         </form>`
+      }
+   </script>
 </body>
 
 </html>

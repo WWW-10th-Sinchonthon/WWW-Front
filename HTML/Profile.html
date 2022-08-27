@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WWW</title>
+   <link rel="stylesheet" href="../CSS/Profile.css">
+</head>
+
+<body>
+   <header>
+      <div class="imgContainer">
+         <img class="cloud10" src="../img/image 10.svg" />
+         <img class="cloud11" src="../img/image 11.svg" />
+         <img class="cloud12" src="../img/image 12.svg" />
+         <img class="cloud13" src="../img/image 13.svg" />
+         <img class="cloud14" src="../img/image 14.svg" />
+      </div>
+      <div class="logo">
+         <p>www</p>
+      </div>
+      <div class="textContainer">
+         <p><span>w</span>hen</p>
+         <p><span>w</span>eather</p>
+         <p><span>w</span>ear</p>
+      </div>
+      <div class="btnContainer">
+         <button class="loginBtn" onclick="changeLogin();">로그인</button>
+         <button class="signupBtn" onclick="changeSignup();">회원가입</button>
+      </div>
+   </header>
+   <main>
+      <p>회원가입이 완료 되었습니다.<br />프로필을 꾸며 보세요.</p>
+      <form enctype="multipart/form-data">
+         <input type="text" name="nickname" placeholder="Nickname" />
+         <input type="file" name="photo" id="photo" />
+         <label for="photo">
+            <div class="photoUpload">upload_photo</div>
+         </label>
+         <textarea placeholder="introduce your self:-)"></textarea>
+         <input class="submitBtn" type="submit" value="회원가입" />
+      </form>
+   </main>
+</body>
+
+</html>

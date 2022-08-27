@@ -56,6 +56,59 @@
          <div style="width:390px; height:80px"></div>
       </div>
    </main>
+   <script>
+      const cloud10 = document.querySelector('.cloud10')
+      const cloud11 = document.querySelector('.cloud11')
+      const cloud12 = document.querySelector('.cloud12')
+      const cloud13 = document.querySelector('.cloud13')
+
+      cloud10.style.left = "308px"
+      cloud11.style.left = "0px"
+      cloud12.style.left = "290px"
+      cloud13.style.left = "89px"
+
+      let animate;
+
+      const cloudActive = () => {
+         moving1();
+         moving2();
+         moving3();
+      }
+
+      const moving1 = () => {
+         cloud10.style.left = parseInt(cloud10.style.left) + 1 + 'px';
+         cloud11.style.left = parseInt(cloud11.style.left) + 1 + 'px';
+         if (cloud10.style.left === '390px') {
+            cloud10.style.left = "-100px"
+         }
+         if (cloud11.style.left === '390px') {
+            cloud11.style.left = "-100px"
+         }
+
+         animate = setTimeout(moving1, 20)
+      }
+
+      const moving2 = () => {
+         cloud12.style.left = parseInt(cloud12.style.left) + 1 + 'px';
+
+         if (cloud12.style.left === '390px') {
+            cloud12.style.left = "-100px"
+         }
+         animate = setTimeout(moving2, 30)
+      }
+
+      const moving3 = () => {
+         cloud13.style.left = parseInt(cloud13.style.left) + 1 + 'px';
+
+         if (cloud13.style.left === '390px') {
+            cloud13.style.left = "-100px"
+         }
+
+         animate = setTimeout(moving3, 40)
+      }
+
+      window.onload = cloudActive;
+   </script>
 </body>
 
 </html>

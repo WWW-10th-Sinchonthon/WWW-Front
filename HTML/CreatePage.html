@@ -1,116 +1,94 @@
 <!DOCTYPE html>
 <html lang="kr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="../CSS/Create.css" rel="stylesheet" />
 
-		<title>WWW.</title>
-	</head>
-	<body>
-		<div class="view">
-			<div class="topBar">
-				<p id="title">WWW.</p>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="../CSS/Create.css" rel="stylesheet" />
+
+	<title>WWW.</title>
+</head>
+
+<body>
+	<div class="view">
+		<img class="cloud10" src="../img/image 10.svg" />
+		<img class="cloud11" src="../img/image 11.svg" />
+		<img class="cloud12" src="../img/image 12.svg" />
+		<img class="cloud13" src="../img/image 13.svg" />
+		<div class="topBar">
+			<p id="title">WWW.</p>
+		</div>
+		<div class="CreateBox">
+			<div class="picture">
+				<div class="Title">사진 업로드 🖼</div>
+				<p id="ps">사진을 업로드 해주세요 :-)</p>
+				<br />
+				<br />
 			</div>
-			<div class="CreateBox">
-				<div class="picture">
-					<div class="Title">사진 업로드 🖼</div>
-					<p id="ps">사진을 업로드 해주세요 :-)</p>
-					<br />
-					<br />
-				</div>
-				<div class="weather">
-					<div class="Title">현재 날씨 ⛅</div>
-					<div class="subTitle">
-						<p id="index">오늘의 날씨:</p>
-						<div class="btnBundle">
-							<button class="tagBtn1">#맑음</button>
-							<button class="tagBtn1">#흐림</button>
-							<button class="tagBtn1">#비</button>
-							<button class="tagBtn1">#눈</button>
-							<button class="tagBtn1">#바람</button>
-						</div>
-					</div>
-					<textarea
-						id="weather"
-						type="text"
-						placeholder="오늘의 날씨를 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"
-					></textarea>
-				</div>
+			<div class="weather">
+				<div class="Title">현재 날씨 ⛅</div>
 				<div class="subTitle">
-					<p id="index">오늘의 기온:</p>
-					<textarea
-						id="temp1"
-						type="textar"
-						placeholder="정확한 기온 숫자만 적어주세요 ~ !"
-					></textarea>
-				</div>
-				<textarea
-					type="text"
-					id="temp2"
-					placeholder="오늘의 기온을 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"
-				></textarea>
-				<div class="subTitle">
-					<p id="index">초미세먼지 :</p>
+					<p id="index">오늘의 날씨:</p>
 					<div class="btnBundle">
-						<button class="tagBtn2">#좋음</button>
-						<button class="tagBtn2">#조금좋음</button>
-						<button class="tagBtn2">#보통</button>
-						<button class="tagBtn2">#조금나쁨</button>
-						<button class="tagBtn2">#나쁨</button>
+						<button class="tagBtn1">#맑음</button>
+						<button class="tagBtn1">#흐림</button>
+						<button class="tagBtn1">#비</button>
+						<button class="tagBtn1">#눈</button>
+						<button class="tagBtn1">#바람</button>
 					</div>
 				</div>
-				<textarea
-					type="text"
-					id="microDust"
-					placeholder="오늘의 초미세먼지 농도에 대해 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"
-				></textarea>
-				<div class="write">
-					<div class="Title">글쓰기 🖋</div>
-					<div class="subTitle1">
-						<p id="index">오늘의 tmi :</p>
-						<textarea
-							type="text"
-							id="tmi"
-							placeholder="오늘의 날씨에 따른 기록을 해보세요. 짧아도 좋아요."
-						></textarea>
-					</div>
+				<textarea id="weather" type="text" placeholder="오늘의 날씨를 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"></textarea>
+			</div>
+			<div class="subTitle">
+				<p id="index">오늘의 기온:</p>
+				<textarea id="temp1" type="textar" placeholder="정확한 기온 숫자만 적어주세요 ~ !"></textarea>
+			</div>
+			<textarea type="text" id="temp2" placeholder="오늘의 기온을 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"></textarea>
+			<div class="subTitle">
+				<p id="index">초미세먼지 :</p>
+				<div class="btnBundle">
+					<button class="tagBtn2">#좋음</button>
+					<button class="tagBtn2">#조금좋음</button>
+					<button class="tagBtn2">#보통</button>
+					<button class="tagBtn2">#조금나쁨</button>
+					<button class="tagBtn2">#나쁨</button>
 				</div>
-				<div class="tag">
-					<div class="Title">태그 📎</div>
-					<p id="ps">오늘 입은 옷 들을 기록을 해보세요.</p>
-					<div class="subTitle">
-						<p id="index">옷 태그:</p>
-						<textarea
-							type="text"
-							class="clothesTag"
-							id="bar1"
-							placeholder="ex) 얇은 슬랙스"
-						></textarea>
-					</div>
-					<div class="left1">
-						<textarea type="text" class="clothesTag"></textarea>
-						<textarea type="text" class="clothesTag"></textarea>
-					</div>
-					<p id="ps">오늘을 태그 형태로 기록을 해보세요.</p>
-					<div class="subTitle">
-						<p id="index">기록 태그 :</p>
-						<textarea
-							type="text"
-							class="archiveTag"
-							id="bar2"
-							placeholder="ex) 한강"
-						></textarea>
-					</div>
-					<div class="left2">
-						<textarea type="text" class="archiveTag"></textarea>
-						<textarea type="text" class="archiveTag"></textarea>
-					</div>
+			</div>
+			<textarea type="text" id="microDust"
+				placeholder="오늘의 초미세먼지 농도에 대해 서술해주세요. 자세히 서술해 줄수록 도움 받는 사람들이 많아요 :-)"></textarea>
+			<div class="write">
+				<div class="Title">글쓰기 🖋</div>
+				<div class="subTitle1">
+					<p id="index">오늘의 tmi :</p>
+					<textarea type="text" id="tmi" placeholder="오늘의 날씨에 따른 기록을 해보세요. 짧아도 좋아요."></textarea>
+				</div>
+			</div>
+			<div class="tag">
+				<div class="Title">태그 📎</div>
+				<p id="ps">오늘 입은 옷 들을 기록을 해보세요.</p>
+				<div class="subTitle">
+					<p id="index">옷 태그:</p>
+					<textarea type="text" class="clothesTag" id="bar1" placeholder="ex) 얇은 슬랙스"></textarea>
+				</div>
+				<div class="left1">
+					<textarea type="text" class="clothesTag"></textarea>
+					<textarea type="text" class="clothesTag"></textarea>
+				</div>
+				<p id="ps">오늘을 태그 형태로 기록을 해보세요.</p>
+				<div class="subTitle">
+					<p id="index">기록 태그 :</p>
+					<textarea type="text" class="archiveTag" id="bar2" placeholder="ex) 한강"></textarea>
+				</div>
+				<div class="left2">
+					<textarea type="text" class="archiveTag"></textarea>
+					<textarea type="text" class="archiveTag"></textarea>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
 
 <script>
@@ -157,4 +135,57 @@
 	}
 
 	init2();
+
+	const cloud10 = document.querySelector('.cloud10')
+	const cloud11 = document.querySelector('.cloud11')
+	const cloud12 = document.querySelector('.cloud12')
+	const cloud13 = document.querySelector('.cloud13')
+
+	cloud10.style.left = "308px"
+	cloud11.style.left = "0px"
+	cloud12.style.left = "290px"
+	cloud13.style.left = "89px"
+
+	let animate;
+
+	const cloudActive = () => {
+		moving1();
+		moving2();
+		moving3();
+	}
+
+	const moving1 = () => {
+		cloud10.style.left = parseInt(cloud10.style.left) + 1 + 'px';
+		cloud11.style.left = parseInt(cloud11.style.left) + 1 + 'px';
+		if (cloud10.style.left === '390px') {
+			cloud10.style.left = "-100px"
+		}
+		if (cloud11.style.left === '390px') {
+			cloud11.style.left = "-100px"
+		}
+
+		animate = setTimeout(moving1, 20)
+	}
+
+	const moving2 = () => {
+		cloud12.style.left = parseInt(cloud12.style.left) + 1 + 'px';
+
+		if (cloud12.style.left === '390px') {
+			cloud12.style.left = "-100px"
+		}
+		animate = setTimeout(moving2, 30)
+	}
+
+	const moving3 = () => {
+		cloud13.style.left = parseInt(cloud13.style.left) + 1 + 'px';
+
+		if (cloud13.style.left === '390px') {
+			cloud13.style.left = "-100px"
+		}
+
+		animate = setTimeout(moving3, 40)
+	}
+
+	window.onload = cloudActive;
+
 </script>

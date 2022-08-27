@@ -11,7 +11,9 @@
 			<div class="topBar">
 				<p id="title">WWW.</p>
 				<div class="right">
-					<p id="write">글쓰기</p>
+					<p id="write" onclick="location.href='../Html/CreatePage.html'">
+						글쓰기
+					</p>
 					<p id="name">닉네임</p>
 				</div>
 			</div>
@@ -49,7 +51,9 @@
 						코로나만 아니었으면 마스크 집어 던지고 싶은 날~!
 					</p>
 				</div>
-				<button class="releteBtn">날씨 공감 👍 (10)</button>
+				<button class="releteBtn" onclick="releteIncrease()">
+					날씨 공감 👍
+				</button>
 			</div>
 			<div class="tmiBox">
 				<div class="Title">오늘의 tmi 🍀</div>
@@ -61,8 +65,26 @@
 						친구랑 ~~~ 그냥 몇줄 tmi 남기는 곳! 기록장!느낌
 					</div>
 				</div>
-				<button class="scrapBtn">스크랩 하기 🛒 (10)</button>
+				<button class="scrapBtn" onclick="scrapIncrease()">
+					스크랩 하기 🛒
+				</button>
 			</div>
 		</div>
 	</body>
 </html>
+
+<script>
+	var releteCount = 0;
+	function releteIncrease() {
+		releteCount = releteCount + 1;
+		document.querySelector('.releteBtn').innerText =
+			'날씨 공감 👍' + ' ' + '(' + releteCount + ')';
+	}
+
+	var scrapCount = 0;
+	function scrapIncrease() {
+		scrapCount = scrapCount + 1;
+		document.querySelector('.scrapBtn').innerText =
+			'스크랩 하기 🛒' + ' ' + '(' + scrapCount + ')';
+	}
+</script>
